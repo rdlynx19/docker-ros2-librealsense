@@ -1,7 +1,7 @@
 # Dockerfile for ROS2 Humble + Intel Realsense SDK (librealsense)
 
 This template will get you set up using ROS2 with VSCode as your IDE. \
-This template is adopted from [Allison Thackston](https://github.com/athackst)
+This template is adopted from [Allison Thackston](https://github.com/athackst) \
 Instructions to use this template can be found on this [repository](https://github.com/athackst/vscode_ros2_workspace)
 
 ## Dockerfile
