@@ -1,5 +1,5 @@
 // See https://aka.ms/vscode-remote/devcontainer.json for format details.
-{
+{	"name" : "athackst-humble",
 	"dockerFile": "Dockerfile",
 	"build": {
 		"args": {
@@ -8,13 +8,15 @@
 	},
 	"remoteUser": "ros",
 	"runArgs": [
+		"--privileged",
 		"--network=host",
 		"--cap-add=SYS_PTRACE",
 		"--security-opt=seccomp:unconfined",
 		"--security-opt=apparmor:unconfined",
 		"--volume=/tmp/.X11-unix:/tmp/.X11-unix",
 		"--volume=/mnt/wslg:/mnt/wslg",
-		"--ipc=host"
+		"--ipc=host",
+		"--device=/dev/bus/usb:/dev/bus/usb"
 		// uncomment to use intel iGPU
 		// "--device=/dev/dri"
 	],
